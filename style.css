@@ -1,0 +1,876 @@
+html, body{
+  margin: 0px;
+  padding: 0px;
+
+}
+
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: rgba(0, 0, 0, 0.87);
+  -webkit-font-smoothing: antialiased;
+  min-height:900px;
+}
+body hr {
+  border: none;
+  border-top: 4px solid black;
+  margin-bottom: 40px;
+}
+
+p{
+         font-size: 28px;
+    font-weight: 800;
+    padding: 20px;
+    margin:0;
+    line-height: 33px;
+    font-family: Gibson sans-serif;;
+}
+
+h2{
+      font-family: Gibson ,serif;
+    font-size: 7vmin;
+    z-index: 1;
+    padding: 20px;
+}
+
+.header h2 {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  color: white;
+  font-size: 7vmin;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0);
+}
+/*Sidebar*/
+.sidebar ul {
+   list-style: none;
+  padding: 0;
+  margin-top: 40%
+
+}
+.page-content{
+  position: relative;
+  z-index: 0;  
+}
+
+.curent-page{
+  width: 160px;
+    height: 47px;
+    position: fixed;
+    left: 47px;
+    font-family: Gibson;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 22px;
+    padding-left: 22px;
+    line-height: 47px;
+    z-index: 2;
+    color: #fff;
+}
+
+.toggle{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99967;
+    width: 50px;
+    height: 50px;
+    margin: 24px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 60px
+}
+body, .sidebar, .page-wraper ,.show-sidebar, .toggle{
+  -webkit-transition:  left 0.7s ease;
+  -o-transition: left 0.7s ease;
+  transition: left 0.7s ease;
+}
+
+ h2.second{
+  top:57%;
+}
+
+.sidebar{
+  z-index: 1;
+  background: #333;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: -250px;
+  padding: 38px;
+  width: 150px;
+}
+.show-sidebar{
+  left: 0;
+}
+.sidebar li {
+    margin-left: 23%;
+    cursor: pointer;
+    color: rgba(255,255,255,0.8);
+    font-size: 16px;
+    margin-bottom: 16px;
+    font-family: Gibson;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+.sidebar li:hover{
+    color:rgba(255,255,255,1);
+
+}
+/*Header*/
+.header {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+.overlay{
+  background: url("service-slide-gradient.png");
+  width: 100%;
+  height: 100vh;
+}
+
+#header-div {
+  -webkit-transition:  background-position 0.5s ease-out;
+  -o-transition: background-position 0.5s ease-out;
+  transition: background-position 0.5s ease-out;
+  top: 0; 
+  /*transition: all .2s ease-in-out;*/
+position: fixed;
+background: url("p.jpeg") no-repeat center center;
+width: 100%;
+height: 100vh;
+background-size: cover;
+-webkit-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+    transform: scale(1.1);
+background-position: 1px 2px;
+          
+}
+
+/*header-end*/
+
+/*about*/
+.about{
+      position: relative;
+      
+}
+.div-half{
+  position: absolute;
+  width: 50%;
+  height: 100vh;
+}
+
+.half-right{
+       position: absolute;
+    width: 50%;
+    left: 0;
+    height: 100vh;
+    background-color: transparent;
+    background: url(dv.png) no-repeat center center;
+    background-position: 0px 0px;
+    background-size: 200%;
+    background-repeat: no-repeat;
+}
+.half-right h1{
+        position: absolute;
+    top: 30%;
+font-family: Gibson;
+    font-size: 7vmin;
+    right: 31%;
+    margin-left: 3%;
+}
+
+.me-end{
+    position: absolute;
+    width: 50%;
+    left: 0;
+    bottom: 0;
+    height: 100vh;
+    background-color: transparent;
+    background: url(dv.png) no-repeat center center;
+    background-position: 0px 0px;
+    background-size: 200%;
+    background-repeat: no-repeat;
+  }
+
+.half-left{
+   position: relative;
+    width: 50%;
+    z-index: 2;
+    left: 50%;
+}
+
+.me-fixed{
+    position: fixed;
+    top: 0;
+    background: url("dv.png") no-repeat center center;
+    width: 50%;
+    height: 100vh;
+    z-index: 2;
+    background-size: 200%;
+    background-position: 0px -11px;
+    left: 0;
+    bottom: 0;
+}
+.fixed-bottom{
+  position: absolute;
+    background: url("dv.png") no-repeat center center;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    background-size: 200%;
+    background-position: 0px -11px;
+    left: 0;
+    bottom: -105.4vh;
+
+}
+
+.image-holder{
+  height: 100vh;
+background: url("dv.png") no-repeat center center;
+    background-position: 100% 0;
+    background-size: 200%;
+    background-repeat:no-repeat;
+    }
+
+
+/*about-end*/
+
+/*portfolio*/
+
+.portfolio{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;  
+}
+
+.portfolio-titles{
+  width: 50%;
+  background: #ececec;
+    text-align: center;
+}
+
+.portfolio-titles ul{
+
+  list-style-type: none;
+}
+
+
+
+.socials li{
+    width: 64px;
+    border-radius: 50%;
+    height: 64px;
+    z-index: 12;
+    position: relative;
+    display: inline-block;
+  }
+
+.socials li a{
+  position: absolute;
+  z-index: 10000;
+  display: block;
+  width: 100%;
+  height:100%;
+  }
+  
+
+.socials li:nth-child(1) {
+    background: url("fre.png") center;
+    background-size: cover;
+}
+.socials li:nth-child(2) {
+    background: url("git.png") center;
+    background-size: cover;
+}
+.socials li:nth-child(3) {
+    background: url("c.jpg") center;
+    background-size: cover;
+}
+
+.portfolio h2{
+  position: relative;
+  z-index: 5;
+}
+.projects-slides ul{
+    list-style-type: none;
+
+}
+
+.projects-slides ul li{
+  display: inline-block;
+}
+.projects-slides ul li:hover {
+  -webkit-box-shadow: 2px 2px 0px white, 4px 4px 0px #5b5f6a;
+          box-shadow: 2px 2px 0px white, 4px 4px 0px #5b5f6a;
+  top: -4px;
+  left: -4px;
+}
+
+.projects-slides ul li {
+    width: 272px;
+    height: 221px;
+    margin: 7px;
+  -webkit-box-shadow: 3px 0 10px 1px rgba(0,0,0,.2);
+          box-shadow: 3px 0 10px 1px rgba(0,0,0,.2);
+  margin-bottom: 20px;
+
+}
+
+.projects-slides ul li:nth-child(1) {
+    background: url("s.jpg") center;
+    background-size: cover;
+}
+
+.projects-slides ul li:nth-child(2) {
+    background: url("T.gif") center;
+    background-size: cover;
+}
+
+.projects-slides ul li:nth-child(3) {
+    background: url("Sp.jpg") center;
+    background-size: cover;
+}
+
+.projects-slides ul li:nth-child(4) {
+    background: url("Pp.jpg") center;
+    background-size: cover;
+}
+
+
+.projects-slides ul li:nth-child(5) {
+    background: url("hp.jpg") center;
+    background-size: cover;
+}
+
+.portfolio-projects{
+  width: 50%;
+  height: 100vh;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.wrap-project{
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  width: 0%;
+  height: 100%;
+  overflow: hidden;
+  -webkit-transition:.5s all linear;
+  -o-transition:.5s all linear;
+  transition:.5s all linear;
+}
+
+.wrap-project h2{
+ position: absolute;
+    background: rgba(30,17,45,0.4);
+    bottom: 0;
+    color: white;
+    left: 4%;
+
+}
+
+/*animate add project*/
+.show-project{
+  z-index: 1;
+  width: 100%;
+  -webkit-transition:.5s all linear;
+  -o-transition:.5s all linear;
+  transition:.5s all linear;
+}
+
+.project1:hover{
+  -webkit-transform:  scale(2.2);
+      -ms-transform:  scale(2.2);
+          transform:  scale(2.2);
+}
+
+.project1:hover{
+  -webkit-transform:  scale(2.2);
+      -ms-transform:  scale(2.2);
+          transform:  scale(2.2);
+}
+
+.project2:hover{
+  -webkit-transform:  scale(2.2);
+      -ms-transform:  scale(2.2);
+          transform:  scale(2.2);
+}
+
+.project3:hover{
+  -webkit-transform:  scale(2.2);
+      -ms-transform:  scale(2.2);
+          transform:  scale(2.2);
+}
+
+.project4:hover{
+  -webkit-transform:  scale(2.2);
+      -ms-transform:  scale(2.2);
+          transform:  scale(2.2);
+}
+.project5:hover{
+  -webkit-transform:  scale(2.2);
+      -ms-transform:  scale(2.2);
+          transform:  scale(2.2);
+}
+
+
+.project1{
+  -webkit-transition: 35s -webkit-transform linear;
+  transition: 35s -webkit-transform linear;
+  -o-transition: 35s transform linear;
+  transition: 35s transform linear;
+  transition: 35s transform linear, 35s -webkit-transform linear;
+    background: url("s.jpg") center;
+  background-size: cover;
+  height: 100vh;
+
+}
+.project2{
+
+  -webkit-transition: 35s -webkit-transform linear;
+
+  transition: 35s -webkit-transform linear;
+
+  -o-transition: 35s transform linear;
+
+  transition: 35s transform linear;
+
+  transition: 35s transform linear, 35s -webkit-transform linear;
+  background: url("T.gif") center;
+  background-size: cover;
+  height: 100vh;
+
+}
+.project3{
+
+  -webkit-transition: 35s -webkit-transform linear;
+
+  transition: 35s -webkit-transform linear;
+
+  -o-transition: 35s transform linear;
+
+  transition: 35s transform linear;
+
+  transition: 35s transform linear, 35s -webkit-transform linear;
+  background: url("Sp.jpg") center;
+  background-size: cover;
+  height: 100vh;
+
+}
+.project4{
+
+  -webkit-transition: 35s -webkit-transform linear;
+
+  transition: 35s -webkit-transform linear;
+
+  -o-transition: 35s transform linear;
+
+  transition: 35s transform linear;
+
+  transition: 35s transform linear, 35s -webkit-transform linear;
+  background: url("Pp.jpg") center;
+  background-size: cover;
+  height: 100vh;
+
+}
+.project5{
+  -webkit-transition: 35s -webkit-transform linear;
+  transition: 35s -webkit-transform linear;
+  -o-transition: 35s transform linear;
+  transition: 35s transform linear;
+  transition: 35s transform linear, 35s -webkit-transform linear;
+  background: url("hp.jpg") center;
+  background-size: cover;
+  height: 100vh;
+
+}
+.over{
+  width: 100vh;
+  height: 100vh;
+  background-color: rgba(1,1,1,0,4);
+}
+.descript{
+    z-index: 1;
+    width: 40%;
+    height: 40%;
+    background: grey;
+    position: absolute;
+    right: 30%;
+    bottom: 30%;
+}
+
+/*animation-sidebar*/
+
+
+li, .sidebar{
+  -webkit-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+ .sidebar li:hover {padding-left: 10px;
+  font-size: 25px;
+}
+
+li, .sidebar-footer{
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+ .sidebar-footer li:hover {
+  padding-right: 20px;
+  font-size: 26px;
+  font-weight: 800;
+}
+
+
+
+/*Contact*/
+.contact h2{
+  font-size: 5vmin;
+}
+.contact{
+  position: relative;
+    width: 100%;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.contact-title{
+  text-align: center;
+  width: 50%;
+  background: url(contact.jpeg);
+  background-size: cover;
+  
+}
+
+.contact-content{
+  width: 50%;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    /*background: url(http://www.powerpointhintergrund.com/download/hd-desk-background-wallpaper-image-2377);*/
+    background-size: cover;
+
+}
+
+.form{
+   -webkit-transition: height 400ms cubic-bezier(0.25, 0.39, 0.39, 2.01);
+  -o-transition: height 400ms cubic-bezier(0.25, 0.39, 0.39, 2.01);
+  transition: height 400ms cubic-bezier(0.25, 0.39, 0.39, 2.01);
+  width: 70%;
+  display:block;
+  margin: auto;
+  height: 0;
+        background: rgba(19, 35, 47, 0.9);
+
+    max-width: 600px;
+    margin: 40px auto;
+    border-radius: 4px;
+ 
+}
+
+.show-form{
+        padding: 20px;
+    -webkit-box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+            box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+  height: 350px;
+    border: 2px solid;
+    -webkit-transition: height 400ms cubic-bezier(0.25, 0.39, 0.39, 2.01);
+  -o-transition: height 400ms cubic-bezier(0.25, 0.39, 0.39, 2.01);
+  transition: height 400ms cubic-bezier(0.25, 0.39, 0.39, 2.01);
+}
+.btn{
+
+    background: #4285f4;
+    width: 15vmin;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 15px 14px;
+    border-radius: 5px;
+    margin: auto;
+    -webkit-box-shadow: 0px 17px 10px -10px rgba(0, 0, 0, 0.4);
+            box-shadow: 0px 17px 10px -10px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    -webkit-transition: all ease-in-out 300ms;
+    -o-transition: all ease-in-out 300ms;
+    transition: all ease-in-out 300ms;
+}
+.btn:hover {
+  -webkit-box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.2);
+  -webkit-transform: translate(0px, -10px) scale(1.1);
+          -ms-transform: translate(0px, -10px) scale(1.1);
+      transform: translate(0px, -10px) scale(1.1);
+}
+
+
+textarea, input{
+  border: none;
+  outline: none;
+  border-radius: 0;
+  text-align: center;
+  background: none;
+  font-weight: 700;
+  font-family: 'Lato', georgia;
+  font-size: 25px;
+  color: rgba(255, 255, 255, 1);
+  width: 40%;
+  padding: 0px;
+  border: 2px dashed rgba(255, 255, 255, 0);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: text;
+}
+
+.p-form{
+    padding: 0;
+      font-family: 'Lato', georgia;
+    font-size: 25px;
+    color: rgba(255, 255, 255, 1);
+    /* background-color: rgba(236, 181, 62, 0.95); */
+    text-align: center;
+}
+.form p textarea{
+  width: 80%;
+}
+
+.p-form{
+  display: none;
+}
+
+
+::-webkit-input-placeholder {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.4);
+  font-style: italic;
+  font-weight: 400;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  
+  text-align: center;
+  color: rgba(255, 255, 255, 0.4);
+  font-style: italic;
+  font-weight: 400;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  
+  text-align: center;
+  color: rgba(255, 255, 255, 0.4);
+  font-style: italic;
+  font-weight: 400;
+}
+
+:-ms-input-placeholder {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.4);
+  font-style: italic;
+  font-weight: 400;
+}
+
+
+.show-content{
+  display: block;    
+    -webkit-transition: display 400ms cubic-bezier(0.25, 0.39, 0.39, 2.01);
+  -o-transition: display 400ms cubic-bezier(0.25, 0.39, 0.39, 2.01);
+  transition: display 400ms cubic-bezier(0.25, 0.39, 0.39, 2.01);
+}
+
+.send-btn{
+}
+
+/*start footer*/
+.foot{
+  height: 200px;
+}
+.sidebar-footer{
+  width: 100%;
+  position: relative;
+  height: 120px;  
+}
+.sidebar-footer ul {
+    list-style: none;
+    padding: 25px;
+    margin: 0;
+  }
+
+.sidebar-footer li {
+    margin-left: 20px;
+    cursor: pointer;
+    color: rgba(255,255,255,0.8);
+    font-size: 16px;
+    margin-bottom: 16px;
+    font-family: Gibson;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 25px;
+    display: inline-block;
+}
+
+.footer h5{
+      font-size: 14px;
+    position: absolute;
+    bottom: 0px;
+    right: 1%;
+}
+
+.over{
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  background: black;
+}
+
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid blue;
+  border-bottom: 16px solid blue;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  position: absolute;
+    top: 40%;
+    right: 44%;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+
+.footer{
+      position: relative;
+    background: #2c1e32e6;
+  }
+
+
+
+@media only screen and (max-width: 1200px) {
+   .portfolio {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.working-bottom{
+  display: none;
+}
+.portfolio-titles {
+    width: 102%;
+    text-align: center;
+    display: block;
+
+}
+
+
+
+.portfolio-projects {
+    width: 100%;
+    height: 100vh;
+
+    /* overflow: hidden; */
+    /* position: absolute; */
+    display: block;
+    /* top: 0; */
+    /* right: 0; */
+}
+
+.half-right h1{
+  top:0;
+}
+
+#header-div{
+  position: relative;
+}
+.projects-slides ul {
+    position: relative;
+    z-index: 3;
+    list-style-type: none;
+    padding: 0;
+}
+
+.projects-slides ul  li{
+    width: 154px;
+    height: 127px;
+    margin: 3px;
+    padding: 0;
+
+}
+
+.contact-title{
+  width: 100%;
+}
+
+.contact-content{
+    width: 100%;
+    text-align: center;
+    margin-top: 45px; 
+
+}
+
+}
+/*    box-shadow: 3px 0 10px 1px rgba(0,0,0,.2);*/
+
+
+
+@media only screen and (max-width: 700px) {
+  
+    .projects-slides ul li {
+    width: 154px;
+    height: 127px;
+    margin: 3px;
+    padding: 0;
+}
+
+
+.project-slides ul{
+
+    z-index: 3;
+    list-style-type: telugu;
+    text-align: center;
+    padding: 0px;
+}
+
+
+}
